@@ -1,7 +1,7 @@
 # Blackhat - Online Assesment System
 
 Version 1.2
-By @sommerbenjamin and @shmuelhalbfinger
+By @remmosnimajneb and @shmuelhalbfinger
 
 Honestly, don't use this, but if your that desperate.....
 
