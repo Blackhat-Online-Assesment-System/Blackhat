@@ -1,0 +1,337 @@
+/*CSS File*/
+
+/*
+* Table of Contents:
+* Section 0 - Resets and General Overall Styling
+* - 0.0 - Font and Style Imports
+* - 0.1 - CSS Resets to normalize CSS
+* - 0.2 - Flex Container Styling
+* Section 1 - Header
+* - 1.1 - Logo
+* - 1.2 - Navigation Menu Bar
+* Section 2 - Main Website Content
+* - 2.1 - General Styling
+* - 2.2 - Forms Styling
+* - - 2.2.1 - Login Form Styling 
+* Secton 3 - Sidebar Styling
+* - 3.1 - General Styling
+* Section 4 - Full Page Width Styling
+* - 4.1 - General Styling
+* - 4.2 - Error Page Styling
+*/
+
+
+/*
+* Section 0 - Resets and General Overall Styling
+*/
+
+/* 0.0 - Font and Style Imports */
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+/* 0.1 - CSS Resets to normalize CSS */
+html, body, div, span, applet, object,
+iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
+pre, a, abbr, acronym, address, big, cite,
+code, del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var, b,
+u, i, center, dl, dt, dd, ol, ul, li, fieldset,
+form, label, legend, table, caption, tbody,
+tfoot, thead, tr, th, td, article, aside,
+canvas, details, embed, figure, figcaption,
+footer, header, hgroup, menu, nav, output, ruby,
+section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	overflow: none;
+	vertical-align: baseline;
+	font-family: 'Roboto', sans-serif;}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;}
+
+body {
+	line-height: 1;
+}
+body {
+  background: linear-gradient(-45deg, #707070, #808080, #A8A8A8);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  }
+
+  @keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+ol, ul {
+	list-style: none;
+}
+
+blockquote, q {
+	quotes: none;
+}
+
+	blockquote:before, blockquote:after, q:before, q:after {
+		content: '';
+		content: none;
+	}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+body {
+	-webkit-text-size-adjust: none;
+}
+
+mark {
+	background-color: transparent;
+	color: inherit;
+}
+
+input::-moz-focus-inner {
+	border: 0;
+	padding: 0;
+}
+
+input, select, textarea {
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	-ms-appearance: none;
+	appearance: none;
+}
+
+strong {
+  font-weight: 900;
+}
+
+
+/* 0.2 Flex Container Styling */
+/*
+.flex-container {
+  display: flex;
+  padding: 15px;
+}
+
+.flex-container > section {
+    padding: 10px;
+}
+*/
+/*
+* Section 1 - Header
+*/
+/*
+.wst-header {
+	background-color: #000000;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+*/
+/* 1.1 Logo Area */
+
+header .wst-menu-logo-area {
+	text-align: center;
+	color: white;
+	padding-right: 40%;
+  display: none;
+}
+
+
+/* 1.2 Navigation Menu Bar */
+
+.nav-item li a {
+  text-align: right;
+}
+/*
+
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: black;
+  float: right;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+*/
+
+/*
+* Section 2 - Main Website Content
+*/
+/* 2.1 - General Styling */
+main {
+
+}
+
+.wst-header-title {
+    font-size: 24px;
+    color: green;
+    line-height: 20px;
+}
+
+/* 2.2 - Forms Styling */
+
+form {
+    background-color: #f1f1f1;
+    padding: 15px;
+}
+
+input[type=text], input[type=email], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+
+.wst-button, input[type=button], input[type=submit], input[type=reset] {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.wst-form-half-width {
+  width: 50vw;
+}
+
+.wst-form-half-width input {
+  width: 30vw;
+}
+
+/* 2.2.1 - Login Form Styling */
+
+.wst-login-form {
+    width: 30vw;
+    height: 100%;
+    padding: 30px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/*
+* Section 3 - Sidebar Styling
+*/
+
+/* 3.1 - General Styling */
+.sidebar {
+	float: left;
+	min-height: 90vh;
+	width: 20vw;
+	background-color: #7161ef;
+	padding: 30px;
+	color: white;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.sidebar-assignments-nav {
+	padding: 30px;
+}
+
+.sidebar-assignments-nav ul {
+	background-color: orange;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/*
+* Section 4 - Full Page Width Styling
+*/
+
+/* 4.1 - General Styling */
+main .full-width-content {
+    padding: 50px;
+    line-height: 25px;
+}
+
+.wst-main-content {
+  padding: 15vw;
+}
+
+main .align-center {
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+}
+/* 4.2 - Error Page Styling */
+.wst-error-message {
+  color: red;
+  font-size: 24px;
+  padding: 5px;
+}
+.wst-error-notice {
+  color: red;
+  font-size: 18px;
+  padding: 5px;
+}
+
+.wst-success-notice {
+  color: red;
+  font-size: 18px;
+  padding: 5px;
+}
+
+
+table tr td, table thead th {
+
+    padding: 10px;
+    border: 2px 
+
+black solid;
+}
+
+table thead tr th {
+  font-weight: 700;
+}
+
+/*4.3 - About page styling */
+.form-contact {
+  size: 200px;
+  background-color: #484848;
+  float:left;
+  width: 50%
+}
+.form-contact label {
+  font-size: 20px;
+}
+.form-contact legend {
+  font-size: 55px;
+}
+.jumbotron {
+  height: 45vh;
+}
+.btn-secondary {
+  float: right;
+  height: 75px;
+  width: 75px;
+  font-size: 50px;
+  text-align: center;
+}
