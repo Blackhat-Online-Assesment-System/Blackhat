@@ -22,7 +22,7 @@
 	DEFINE( 'DB_HOST', '' );					// HostName
 	DEFINE( 'DB_NAME', '' );					// Database Name
 	DEFINE( 'DB_USER', '' );					// Database Username
-	DEFINE( 'DB_PASSWORD', '' );				// Database Password
+	DEFINE( 'DB_PASSWORD', '' );					// Database Password
 
 
 /* 3. Set TimeZone */
